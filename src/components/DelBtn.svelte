@@ -7,7 +7,7 @@
 
   function onClickHandler(event) {
     event.stopPropagation();
-    if (id) {
+    if (id !== undefined) {
       removeReservationById(id);
     }
     customEventAfter();

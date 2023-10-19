@@ -1,25 +1,9 @@
 import { readable, writable } from 'svelte/store';
 
-export let reservations = writable([
-  {
-    id: 0,
-    name: 'Noah Lee',
-    phone: '010-1111-2222',
-    date: '2023-07-08',
-    count: 8,
-    table: [
-      { floor: 1, no: 7 },
-      { floor: 1, no: 8 },
-    ],
-    note: 'Birthday',
-  },
-]);
-
-// 손님 이름, 전화번호, 예약날짜, 인원수, 테이블, 노트
+export let reservations = writable([]);
 
 export function removeReservationById(id) {
   reservations.update((items) => items.filter((item) => item.id !== id));
-  console.log(reservations);
 }
 
 export function updateReservationById(id, updatedReservation) {

@@ -5,14 +5,16 @@
 
   const dispatch = createEventDispatcher();
 
-  let selectedDate = new Date();
+  let selectedDate;
   let selectedTime;
   function saveDateAndTime() {
-    const datetime = {
-      date: selectedDate,
-      time: selectedTime,
-    };
-    dispatch('save', datetime);
+    if (selectedTime !== undefined && selectedDate !== undefined) {
+      const datetime = {
+        date: selectedDate,
+        time: selectedTime,
+      };
+      dispatch('save', datetime);
+    }
   }
 
   function deleteDateAndTime() {

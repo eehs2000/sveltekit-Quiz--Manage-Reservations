@@ -91,12 +91,10 @@
   }
 
   onMount(() => {
-    console.log(id);
     if (id !== undefined) {
       const foundReservation = $reservations.find(
         (res) => res.id === Number(id),
       );
-      console.log(foundReservation);
       if (foundReservation) {
         data = {
           id: foundReservation.id,
