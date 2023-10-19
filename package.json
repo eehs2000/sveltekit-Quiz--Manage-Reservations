@@ -1,0 +1,25 @@
+{
+	"name": "una-quiz",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"@poppanator/sveltekit-svg": "^4.1.3",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"prettier": "^3.0.3",
+		"prettier-plugin-svelte": "^3.0.3",
+		"sass": "^1.69.4",
+		"svelte": "^4.0.5",
+		"svelte-preprocess": "^5.0.4",
+		"vite": "^4.4.2"
+	},
+	"type": "module",
+	"dependencies": {
+		"dayjs": "^1.11.10"
+	}
+}
